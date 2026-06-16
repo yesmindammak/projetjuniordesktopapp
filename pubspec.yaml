@@ -1,0 +1,53 @@
+name: olive_oil_analyzer
+description: Application d'analyse d'huile d'olive pour MENANA Organic Food
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:      # ← add this
+    sdk: flutter              # ← same as flutter, it's built-in
+    
+  
+
+  # Database
+  sqflite_common_ffi: ^2.4.0+3
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  
+  # PDF Generation
+  pdf: ^3.10.7
+  printing: ^5.11.1
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # Date & Number Formatting
+  intl: 0.20.2
+  
+  # File Picker
+  file_picker: ^5.5.0
+  
+  # Crypto for password hashing
+  crypto: ^3.0.3
+
+  # UI
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  sqflite: ^2.4.2+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/fonts/
